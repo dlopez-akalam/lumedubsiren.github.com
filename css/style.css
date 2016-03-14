@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Actor);
+
+.featured-img{
+    width: 100%;
+}
+
+
+/*barra de menú*/
+
+.navbar-default {
+    border: none;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar li{
+    font-family: 'Actor', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+@media (min-width: 767px){
+    .navbar{
+        top: 42px;
+    }
+    .navbar li{
+        font-size: medium;
+        padding: 0 30px;
+    }
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #4d4959;
+}
+
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:focus{
+    background-color: transparent;
+    color: #4e7c55;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    color: #64c29e;
+    transition: all 0.3s;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    background-color: whitesmoke;
+    border:none;
+}
+
+@media (min-width: 767px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 1060px) {
+    .navbar-nav{
+    text-align: right;
+    margin-left: 15%;
+    }
+.navbar-right{
+    margin-left: 0;
+    margin-right: 15%;
+    text-align: left;
+    }
+}
+
+/*logo*/
+
+.logo{
+    position: absolute;
+    height: 45px;
+    width: auto;
+    top: 10px;
+    left: 15px;
+}
+
+@media (min-width: 767px) {
+    .logo{
+        top: 22px;
+        margin-left: -47px;
+        left:50%;
+        height: auto;
+        width: auto;
+
+    }
+}
