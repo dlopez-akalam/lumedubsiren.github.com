@@ -89,15 +89,21 @@ a > .logo-menu{
     display: none;
 }
 
-@media (min-width: 767px) {
-    a > .logo-menu{
-        display: inline-block;
-    }
+a > .linkhome{
+    margin: 0;
 }
 
 @media (min-width: 767px) {
+    a > .logo-menu{
+        display: inline-block;
+        position: relative;
+        top: -25px;
+    }
     a > .logo{
         display: none;
 
+    }
+    a > .linkhome{
+        display: none;
     }
 }
