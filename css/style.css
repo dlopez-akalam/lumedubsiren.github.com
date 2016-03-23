@@ -1,109 +1,260 @@
 @import url(https://fonts.googleapis.com/css?family=Actor);
 
-a > .featured-img{
-    width: 100%;
+body{
+  font-family: 'Actor', sans-serif;
+}
+
+h1, h2, h3, h4{
+  text-transform: uppercase;
+  color: #353738;
+  letter-spacing: 0.2em;
+}
+
+h1{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+
+p{
+  color: #848789;
+  line-height: 1.7em;
+  font-size: 16px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.glyphicon{
+  font-size: 35px;
+  color: #64c29e;
+}
+
+/*************  Header **************************/
+
+.featured-img{
+  width: 100%;
+  display: block;
+}
+
+.featured-img img{
+  max-width: 100%;
 }
 
 
 /*barra de menú*/
 
 .navbar-default {
-    border: none;
+  border: none;
 }
 
 .navbar{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
 }
 
 .navbar li{
-    font-family: 'Actor', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2em;
 }
 
 @media (min-width: 767px){
-    .navbar{
-        top: 42px;
-    }
-    .navbar li{
-        font-size: medium;
-        padding: 0 30px;
-    }
+  .navbar{
+    top: 42px;
+  }
+}
+
+@media (min-width: 992px){
+  .navbar li{
+    font-size: 16px;
+  }
+}
+
+
+.navbar-default .navbar-collapse{
+  margin-top: 10px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #4d4959;
+  color: #4d4959;
+  display: inline-block;
 }
 
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active > a:hover,
 .navbar-default .navbar-nav > li.active > a:focus{
-    background-color: transparent;
-    color: #4e7c55;
+  background-color: transparent;
+  color: #4e7c55;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus{
-    color: #64c29e;
-    transition: all 0.3s;
+  color: #64c29e;
+  transition: all 0.3s;
 }
 
+.navbar-default .navbar-nav > li.separador-der:after{
+  content: "·";
+  display: inline-block;
+  margin: 0 18px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    background-color: whitesmoke;
-    border:none;
+  background-color: whitesmoke;
+  border:none;
 }
 
 @media (min-width: 767px) {
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        background-color: transparent;
-    }
+  .navbar-default .navbar-collapse{
+    margin-top: 0;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 }
 
 /*logo*/
 
-a > .logo{
-    position: absolute;
-    height: 45px;
-    width: auto;
-    top: 10px;
-    left: 15px;
+.logo{
+  position: absolute;
+  height: 40px;
+  width: auto;
+  top: 10px;
+  left: 15px;
 }
 
-a > .logo-menu{
-    display: none;
+.logo img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
-a > .linkhome{
-    margin: 0;
+
+
+.logo-menu img{
+  display: none;
+}
+
+.linkhome{
+  margin: 0;
 }
 
 @media (min-width: 767px) {
-    a > .logo-menu{
-        display: inline-block;
-        position: relative;
-        top: -25px;
-    }
-    a > .logo{
-        display: none;
+  .logo-menu{
+    padding: 0 30px;
+  }
 
-    }
-    a > .linkhome{
-        display: none;
-    }
+  .logo-menu img{
+    display: inline-block;
+    position: relative;
+    top: -25px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .linkhome{
+    display: none;
+  }
+}
+
+
+/******************* Content ************************/
+.featured {
+  background: #f7f7f7;
+  padding: 80px 40px;
+  text-align: center;
+}
+@media (min-width: 767px){
+  .featured {
+    padding: 112px 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featured {
+    padding: 112px 160px;
+  }
+}
+
+
+@media (min-width: 767px) {
+  .content-block > .row {
+    display: table;
+  }
+
+  .content-block > .row > .col-sm-8,
+  .content-block > .row > .col-sm-4 {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+  }
+}
+
+.content-block .col-sm-8,
+.content-block .col-sm-4{
+  padding: 0;
+}
+
+.text-block-wrapper{
+  position: relative;
+}
+
+.text-block{
+  background: white;
+  padding: 60px 65px 40px;
+}
+
+.text-block h2{
+  text-align: center;
+}
+
+.text-block .glyphicon{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (min-width: 767px) {
+  .text-block-wrapper .img-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.text-block-wrapper .img-wrapper:before{
+  content: " ";
+  display: block;
+  width: 19px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -9px;
+  background: url(../img/triangle-down.png) no-repeat;
 }
