@@ -164,6 +164,7 @@ img{
 .linkhome{
   margin: 0;
   font-size: 14px;
+  color: #4d4959;
 }
 
 @media (min-width: 767px) {
